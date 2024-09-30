@@ -24,3 +24,17 @@ mvn test
 ```shell
 mvn -Dtest=className#testMethodName test
 ```
+
+### Run single class
+
+```shell
+mvn -Dtest=className test
+```
+
+### View Reports
+
+Please view html in target folder
+
+```text
+dir/selenium_demo/target/surefire-reports/index.html#
+```
