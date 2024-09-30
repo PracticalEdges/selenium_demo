@@ -2,7 +2,7 @@
 <suite name="TestSuite">
     <test name="Ecommerce Tests">
         <classes>
-            <class name="com.selenium.tests.EcommerceDemo"/>
+            <class name="com.selenium.tests.EcommerceDemoTests"/>
         </classes>
     </test>
 </suite>

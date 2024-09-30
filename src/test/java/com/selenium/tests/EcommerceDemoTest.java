@@ -3,8 +3,8 @@ package com.selenium.tests;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class EcommerceDemoTest {
@@ -12,19 +12,18 @@ public class EcommerceDemoTest {
 	
 	@BeforeTest
 	public void setup() {
-	    System.setProperty("webdriver.gecko.driver", "/home/siddharth/drive/pe_selenium/driver/geckodriver");
+		System.setProperty("webdriver.gecko.driver", "/home/siddharth/drive/pe_selenium/driver/geckodriver");
 
 	    // Set up FirefoxOptions for headless mode
-	    FirefoxOptions options = new FirefoxOptions();
-	    options.addArguments("--headless");  // Run in headless mode
-	    options.addArguments("--no-sandbox");
-	    options.addArguments("--disable-dev-shm-usage");
+		FirefoxOptions options = new FirefoxOptions();
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-dev-shm-usage");
 
 	    // Instantiate the FirefoxDriver with the options
-	    driver = new FirefoxDriver(options);
+		driver = new FirefoxDriver(options);
 
 	    // Maximize the browser window (optional in headless mode)
-	    driver.manage().window().maximize();
+		driver.manage().window().maximize();
 	}
 	
 	@Test
