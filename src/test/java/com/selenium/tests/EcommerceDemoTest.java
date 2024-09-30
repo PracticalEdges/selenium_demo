@@ -2,15 +2,12 @@ package com.selenium.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import io.github.cdimascio.dotenv.Dotenv;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
-
-import static org.openqa.selenium.support.ui.ExpectedCondition.*;
 
 public class EcommerceDemoTest {
 	WebDriver driver;
@@ -22,13 +19,13 @@ public class EcommerceDemoTest {
 		driver.manage().window().maximize();
 	}
 
-	@Test
+	@Test(priority = 1)
     public void goToTheEcommerceApp() {
         driver.get("https://www.demoblaze.com/");
         System.out.println("Title of the page is: " + driver.getTitle());
     }
 
-	@Test
+	@Test(priority = 2)
 	public void login(){
 		Dotenv dotenv = Dotenv.load();
 		String username = dotenv.get("WEB_USERNAME");
@@ -74,7 +71,7 @@ public class EcommerceDemoTest {
 		}
     }
 
-	@Test
+	@Test(priority = 3)
 	public void AddToCart(){
 		String Category = "Laptops";
 		String Product = "MacBook air";

@@ -4,11 +4,31 @@
         <classes>
             <class name="com.selenium.tests.EcommerceDemoTest">
                 <methods>
+                    <include name="goToTheEcommerceApp"/>
+                </methods>
+
+                <methods>
                     <include name="login"/>
                 </methods>
 
                 <methods>
                     <include name="AddToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Form fills">
+        <classes>
+            <class name="com.selenium.tests.FormyFillsFormsTest">
+                <methods>
+                    <include name="fillFirstForm"/>
+                </methods>
+            </class>
+
+            <class name="com.selenium.tests.FormyFillsFormsTest">
+                <methods>
+                    <include name="openCloseModal"/>
                 </methods>
             </class>
         </classes>
