@@ -2,7 +2,22 @@
 <suite name="TestSuite">
     <test name="Ecommerce Tests">
         <classes>
-            <class name="com.selenium.tests.EcommerceDemoTests"/>
+            <class name="com.selenium.tests.EcommerceDemoTest">
+                <methods>
+                    <include name="login"/>
+                </methods>
+
+                <methods>
+                    <include name="AddToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Google Tests">
+        <classes>
+            <class name="com.selenium.tests.GoogleSampleTest">
+            </class>
         </classes>
     </test>
 </suite>
