@@ -40,4 +40,18 @@
             </class>
         </classes>
     </test>
+
+    <test name="Google Search Test">
+        <classes>
+            <class name="com.selenium.tests.GoogleSearchTest">
+                <methods>
+                    <include name="SearchAndGoToPageNotTheBestWay"/>
+                </methods>
+
+                <methods>
+                    <include name="searchAndGoToPageGoodWay" />
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
