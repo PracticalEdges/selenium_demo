@@ -14,15 +14,12 @@ public class GoogleSampleTest {
 	public void setup() {
 		System.setProperty("webdriver.gecko.driver", "/home/siddharth/drive/pe_selenium/driver/geckodriver");
 
-	    // Set up FirefoxOptions for headless mode
 		FirefoxOptions options = new FirefoxOptions();
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
 
-	    // Instantiate the FirefoxDriver with the options
 		driver = new FirefoxDriver(options);
 
-		// Maximize the browser window (optional in headless mode)
 		driver.manage().window().maximize();
 	}
 

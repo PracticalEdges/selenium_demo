@@ -39,10 +39,11 @@ public class FormyFillsFormsTest {
 
             driver.get("https://formy-project.herokuapp.com");
 
+
             WebElement fullFormTag = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div/li[14]/a")));
             fullFormTag.click();
             
-            WebElement firstNameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("first-name")));
+            WebElement firstNameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/form/div/div[1]/input")));
             firstNameField.sendKeys(this.firstName);
 
             WebElement lastNameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("last-name")));
