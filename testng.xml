@@ -54,4 +54,14 @@
             </class>
         </classes>
     </test>
+
+    <test name="Facebook Tests">
+        <classes>
+            <class name="com.selenium.tests.FacebookTest">
+                <methods>
+                    <include name="teststeps"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
